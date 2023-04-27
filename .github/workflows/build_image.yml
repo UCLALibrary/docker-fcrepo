@@ -31,4 +31,5 @@ jobs:
         with:
           push: true
           tags: uclalibrary/fcrepo4:4.7.5-multiarch-test
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/arm64
+          build-args: FCREPO_VERSION=4.7.5
