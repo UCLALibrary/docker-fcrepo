@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - 'master'
-  pull_request:
-    branches:
-      - 'master'
- 
 
 jobs:
   docker:
@@ -30,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: uclalibrary/fcrepo4:4.7.5-multiarch-test
+          tags: uclalibrary/fcrepo4:4.7.5
           platforms: linux/amd64,linux/arm64
           build-args: FCREPO_VERSION=4.7.5
